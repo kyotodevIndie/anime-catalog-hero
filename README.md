@@ -3,14 +3,12 @@
     <img src="readme-assets/logo.png" alt="Logo" width="95" height="100">
   </a>
 </p>
-  <h1 align="center">Product View</h1>
+  <h1 align="center">Anime Catalog</h1>
 
   <p align="center">
-    A personal project with react to show products, using the Ranek API from <a href="https://www.origamid.com/">Origamid</a>
+    A personal project with Next.js and Ant Design to show a anime catalog, using the <a href="https://kitsu.docs.apiary.io/#introduction/json:api">Kitsu API</a>!
     <br />
-    Created with CodeSandbox
-    <br />
-    <a href="https://product-view.vercel.app/">View Demo</a>
+    <a href="https://anime-catalog-hero.vercel.app/">View Demo</a>
 </p>
 
 <!-- ABOUT THE PROJECT -->
@@ -25,22 +23,20 @@
 
 </div>
 
-I did this project to deepen my studies in react, react router and module.css
-
 ### Built With
 
-- [React](https://pt-br.reactjs.org/)
-- [React-Router-dom 6.0.0 ](https://reactrouter.com/web/guides/quick-start)
+- [Next](https://nextjs.org/)
+- [Ant Design](https://ant.design/)
 
 ### Installation
 
 1. Clone the repo
 
 ```sh
-git clone https://github.com/kyotodevIndie/product-view.git
+git clone https://github.com/kyotodevIndie/anime-catalog-hero.git
 ```
 
-3. Install the packages using NPM or Yanr
+3. Install the packages using NPM or Yarn
 
 ```sh
 yarn install
@@ -49,8 +45,17 @@ yarn install
 ```sh
 npm install
 ```
+4. run the project
 
-4. Happy coding!
+```sh
+yarn dev
+```
+
+```sh
+npm dev
+```
+
+5. Happy coding!
 
 <!-- CONTRIBUTING -->
 
@@ -78,8 +83,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
    <img src="readme-assets/1.gif" alt="Logo" width="150" height="150">
 
 
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
