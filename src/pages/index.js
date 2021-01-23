@@ -1,25 +1,31 @@
-// import { Layout, Row } from 'antd';
-import InfoDrawer from '../components/InfoDrawer'
+import { Row } from 'antd'
+import React from 'react'
+import AnimeCard from '../components/AnimeCard'
+import FooterPage from '../components/FooterPage'
 
-// import Nav from "../components/Nav";
-// import Footer from "../components/Footer";
 
-function Index () {
-// const { Footer } = Layout;
-
+function Index ({ anime }) {
   return (
-  <>
-      <InfoDrawer>
-      <p className="site-description-item-profile-p" style={{ marginBottom: 24 }}>
-            User Profile 2
-          </p>
-      </InfoDrawer>
-    <h1>Hey</h1>
-  {/* //   <Layout>
-  //     <Nav />
-  //     <Footer />
-  //   </Layout> */}
-  </>
+    <>
+        <Row justify="center" style={{marginLeft: 350, marginRight: 350 }}>
+          {/* {console.log(anime)} */}
+            {anime.data.map((data) => (
+              <AnimeCard key={data.id} img={data.attributes.posterImage.medium} title={data.attributes.canonicalTitle}/>
+            ))}
+        </Row>
+        <FooterPage />
+        
+    </>
   )
+};
+
+export async function getStaticProps () {
+  const response = await fetch('https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=0')
+  const anime = await response.json()
+  return {
+    props: {
+      anime
+    }
+  }
 }
-export default Index
+export default Index;

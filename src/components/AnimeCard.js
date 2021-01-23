@@ -11,7 +11,7 @@ export default function AnimeCard ({ img, title }) {
                         style={{ width: 150, margin: 10 }}
                         cover={<img alt="example" src={img} />}
                     >
-                    <Meta title={title} />
+                    <Meta title={title}/>
                     </Card>
             </Col>
 
