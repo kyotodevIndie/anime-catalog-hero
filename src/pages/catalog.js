@@ -1,15 +1,16 @@
 import { Row } from 'antd'
+import React from 'react'
 import AnimeCard from '../components/AnimeCard'
 
 function Catalog ({ anime }) {
   return (
     <>
-      <Row justify="center">
-        {console.log(anime)}
-          {anime.data.map((data) => (
-              <AnimeCard key={data.id} img={data.attributes.posterImage.medium} title={data.attributes.canonicalTitle} />
-          ))}
-      </Row>
+        <Row justify="center" style={{marginLeft: 350, marginRight: 350 }}>
+          {console.log(anime)}
+            {anime.data.map((data) => (
+              <AnimeCard key={data.id} img={data.attributes.posterImage.medium} title={data.attributes.canonicalTitle}/>
+            ))}
+        </Row>
     </>
   )
 };
@@ -23,4 +24,4 @@ export async function getStaticProps () {
     }
   }
 }
-export default Catalog
+export default Catalog;

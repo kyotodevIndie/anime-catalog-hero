@@ -1,5 +1,5 @@
 // import { Layout, Row } from 'antd';
-import Drawer from '../components/Drawer'
+import InfoDrawer from '../components/InfoDrawer'
 
 // import Nav from "../components/Nav";
 // import Footer from "../components/Footer";
@@ -9,7 +9,11 @@ function Index () {
 
   return (
   <>
-    <Drawer />
+      <InfoDrawer>
+      <p className="site-description-item-profile-p" style={{ marginBottom: 24 }}>
+            User Profile 2
+          </p>
+      </InfoDrawer>
     <h1>Hey</h1>
   {/* //   <Layout>
   //     <Nav />
