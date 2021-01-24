@@ -1,7 +1,7 @@
 import React from 'react'
 import { Button } from 'antd';
 
-export default function LoadMoreButton() {
+export default function LoadMoreButton({onClick}) {
 
 
     return (

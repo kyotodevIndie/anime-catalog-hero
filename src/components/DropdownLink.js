@@ -13,7 +13,7 @@ export default function DropdownLink({children}) {
                 </a>
             </Link>
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
             <Link href="/classificacaomedia">
                 <a>
                     Classificação Média
@@ -26,7 +26,7 @@ export default function DropdownLink({children}) {
                     Data
                 </a>
             </Link>
-            </Menu.Item>
+            </Menu.Item> */}
         </Menu>
     );
     return (

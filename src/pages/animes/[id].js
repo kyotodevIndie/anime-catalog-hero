@@ -1,63 +1,24 @@
 import React from 'react'
 import { Row, Col, Divider } from 'antd'
+import Nav from '../../components/Nav'
 
-export default function Anime({ data }) {
+export default function Anime({ anime }) {
     return (
-        <div>
-            <p style={{ marginBottom: 24 }}>
-            {data}
-          </p>
-          <p>Personal</p>
-          <Row>
-            <Col span={12}>
-              <p title="Full Name" content="Lily" />
+        <>
+          <Nav />            
+          <Row >
+            <Col span={6} offset={6}>
+              <img style={{ width: 200}} src={anime.data[0].attributes.posterImage.medium} alt="Anime Poster" />
             </Col>
             <Col span={12}>
-              <p>AntDesign@example.com"</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={24}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-          </Row>
-          <Divider />
-          <p>AntDesign@example.com"</p>
-          <Row>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-          </Row>
-          <Row>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
-            </Col>
-            <Col span={12}>
-            <p>AntDesign@example.com"</p>
+              <p>{anime.data[0].attributes.canonicalTitle}</p>
+              <p>{anime.data[0].attributes.startDate}</p>
+              <p>{anime.data[0].attributes.averageRating}% de Aprovação da Comunidade</p>
+              <p>{anime.data[0].attributes.synopsis}</p>
             </Col>
           </Row>
           
-            id
-        </div>
+        </>
     )
 };
 
