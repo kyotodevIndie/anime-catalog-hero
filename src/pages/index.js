@@ -11,10 +11,10 @@ import LoadMoreButton from '../components/LoadMoreButton'
 function Index ({ anime }) {
   const [loadmore, setloadmore] = React.useState(0)
   
-  // async function LoadMore(){
-  //   const response = await fetch(`https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=${offset}`)
-  //   const anime = await response.json()
-  // }
+  async function LoadMore(){
+    // const response = await fetch(`https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=${offset}`)
+    // const anime = await response.json()
+  }
 
   return (
     <>
