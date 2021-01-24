@@ -1,17 +1,15 @@
-import { Layout, Menu } from 'antd'
+import React from 'react'
+import { Input } from 'antd';
+import { SearchOutlined } from '@ant-design/icons';
+import { Row, Col } from 'antd';  
 
 export default function Nav () {
-  const { Header } = Layout
   return (
-        <Layout>
-        <Header className="header">
-            <div className="logo" />
-            <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
-                <Menu.Item key="1">nav 1</Menu.Item>
-                <Menu.Item key="2">nav 2</Menu.Item>
-                <Menu.Item key="3">nav 3</Menu.Item>
-            </Menu>
-        </Header>
-        </Layout>
+    <nav style={{ marginTop: 20, paddingBottom:50}}>
+      <Row>
+        <Col span={8} offset={1}><h2>Logo</h2></Col>
+        <Col span={6}><Input placeholder="Pesquisar..." prefix={<SearchOutlined />} /></Col>
+      </Row>
+    </nav>
   )
 }
