@@ -13,7 +13,7 @@
 
 <!-- Prints -->
 
-## About The Project
+## Prints
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
  
