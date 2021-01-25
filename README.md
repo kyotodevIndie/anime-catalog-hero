@@ -26,8 +26,10 @@
 
 ### Built With
 
+- [React](https://pt-br.reactjs.org/)
 - [Next](https://nextjs.org/)
 - [Ant Design](https://ant.design/)
+- [Less Css](http://lesscss.org/)
 
 ### Installation
 
