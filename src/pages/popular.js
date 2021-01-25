@@ -8,13 +8,13 @@ import Title from '../components/Title'
 import DropdownLink from '../components/DropdownLink'
 import AnimeCard from '../components/AnimeCard'
 
-function Index ({ apidata }) {
+
+function Popular ({ apidata }) {
   const [anime, setAnime] = React.useState(apidata.data)
   const [loadmore, setloadmore] = React.useState(20)
-  // const [content, setContent] = React.useState(initialState)
   
   async function LoadMore(){
-  const response = await fetch(`https://kitsu.io/api/edge/anime?sort=-averageRating&page[limit]=20&page[offset]=${loadmore}`)
+  const response = await fetch(`https://kitsu.io/api/edge/anime?sort=popularityRank&page[limit]=20&page[offset]=${loadmore}`)
   const apirequest = await response.json()
   setAnime( state => ([
     ...anime,
@@ -29,18 +29,18 @@ function Index ({ apidata }) {
     <Title />
 
     <DropdownLink>
-      Top Rated Anime
+    Most Popular Anime
     </DropdownLink>
 
     <Row justify="center" className="animecard">
           {anime.map((anime) => (
             <Link key={anime.id} href={`/animes/${anime.id}`}>
-              <Popover placement="right" content={<><p>Average Rating {anime.attributes.averageRating}%</p><p>{anime.attributes.ageRating} - {anime.attributes.ageRatingGuide}</p></>} title={anime.attributes.canonicalTitle} trigger="hover">
-                <a>
-                  <AnimeCard img={anime.attributes.posterImage.medium} title={anime.attributes.canonicalTitle}/>
-                </a>
-              </Popover>
-            </Link>
+            <Popover placement="right" content={<><p>Average Rating {anime.attributes.averageRating}%</p><p>{anime.attributes.ageRating} - {anime.attributes.ageRatingGuide}</p></>} title={anime.attributes.canonicalTitle} trigger="hover">
+              <a>
+                <AnimeCard img={anime.attributes.posterImage.medium} title={anime.attributes.canonicalTitle}/>
+              </a>
+            </Popover>
+          </Link>
           ))}
     </Row>
 
@@ -52,7 +52,7 @@ function Index ({ apidata }) {
 };
 
 export async function getStaticProps () {
-  const response = await fetch('https://kitsu.io/api/edge/anime?sort=-averageRating&page[limit]=20&page[offset]=0')
+  const response = await fetch('https://kitsu.io/api/edge/anime?sort=popularityRank&page[limit]=20&page[offset]=0')
   const apidata = await response.json()
   return {
     props: {
@@ -60,4 +60,4 @@ export async function getStaticProps () {
     }
   }
 }
-export default Index;
+export default Popular;

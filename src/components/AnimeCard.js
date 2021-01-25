@@ -7,10 +7,10 @@ export default function AnimeCard ({ img, title }) {
     <Col>
       <Card
           hoverable
-          style={{ width: 150, margin: 10 }}
+          className="card"
           cover={<img alt="example" src={img} />}
       >
-      <Meta title={title} style={{fontSize: 16}}/>
+      <Meta description={title} classname="metadescription" style={{whiteSpace: 'nowrap'}}/>
       </Card>
     </Col>
   )
