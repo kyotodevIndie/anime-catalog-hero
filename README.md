@@ -1,32 +1,35 @@
  <p align="center">
  <a href="https://github.com/kyotodevindie">
-    <img src="readme-assets/logo.png" alt="Logo" width="95" height="100">
+    <img src="https://lh3.googleusercontent.com/pw/ACtC-3f4cqu64AQe5Cujq7ATD7h0k4wPuexdrt0T_WXZVMxUP3yG00PEs-4xe3whxLCsEehn_K22HEy2aoqzF92RIVgm18iloayyzfhbkinwaHhQkuaKgOhS6YxhBcYYIKcbzRbjGFzGG1FUWzJ3EzecuQc0=w54-h61-no?authuser=0" alt="Logo" width="95" height="100">
   </a>
 </p>
   <h1 align="center">Anime Catalog</h1>
 
   <p align="center">
-    A personal project with Next.js and Ant Design to show a anime catalog, using the <a href="https://kitsu.docs.apiary.io/#introduction/json:api">Kitsu API</a>!
+    Hero is a project that brings an anime catalog for Asian animation enthusiasts, shows detailed information about all the anime cataloged in the <a href="https://kitsu.docs.apiary.io/#introduction/json:api">Kitsu API</a>!
     <br />
     <a href="https://anime-catalog-hero.vercel.app/">View Demo</a>
 </p>
 
-<!-- ABOUT THE PROJECT -->
+<!-- Prints -->
 
-## About The Project
+## Prints
 
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
  
-<img src="readme-assets/1.png"  alt="print 1" width="300" height="300">
-<img src="readme-assets/2.png"  alt="print 2" width="300" height="300">
-<img src="readme-assets/3.png"  alt="print 3" width="300" height="300">
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3ebe4Id7dghkea4Wo-WrCv-q882XnVTYVCaIVNT1nySSR64NhXb68QYIqNToPw_9MmctmOwnf5xEuW1SXYBAlSLRUVb-hEWuoq9BXppc4ndkGnWl4qBzpht3XYBP88cYN4D6rtElOA559OjNgGX56Lg=w1894-h896-no?authuser=0"  alt="print 1" width="600">
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3c14MlQ9kX7cAQ7LmHWn2y6W8U7pLZMg-OOAOFWBQRVw_0lRq_O7ZvL3jHy3eVbfAzhKtlhgcl7k2rYlzxqgX2HqOEwJ-UiF9k_McU9Ief5RxVlZxYYFSWSlDCPoZxmskB_Z3aQOB4HQvtVceZkdPFJ=w1897-h901-no?authuser=0"  alt="print 2" width="600">
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3dUfQzu_lIJiX8Ryf-M6I3mB8qgKDt485FdFXBT7Y5O5Je9x8BWBWFAzCocgqWzQCAK2zuT0oAU7RBTeROpYrYzEiwcMnC7DKPHN9bbH3q-kc50E1KFuJ1l8l0HoSMlCfMxGUfpMBWBiY4ATCVBD10V=w1897-h907-no?authuser=0"  alt="print 3" width="600">
+<img src="https://lh3.googleusercontent.com/pw/ACtC-3ehDLqxkqib9EtrKEEURYkw40V0Jp9MtWpgM18q6c9AqZTDGfcFsdOs6TVH02yLLUM-fa67kuSovkOMUZ1i2hJcgxAeHYl-f2rNUSmq5mlTAn7YKgoJR9-hCvcLPTmwyvhg2EQ7liQf-jmIE2kbjWE0=w1897-h899-no?authuser=0"  alt="print 3" width="600">
 
 </div>
 
 ### Built With
 
+- [React](https://pt-br.reactjs.org/)
 - [Next](https://nextjs.org/)
 - [Ant Design](https://ant.design/)
+- [Less Css](http://lesscss.org/)
 
 ### Installation
 
@@ -82,4 +85,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
    <p> 
     thank you for your patience to read this far! if possible, give a star!
    </p> 
-   <img src="readme-assets/1.gif" alt="Logo" width="150" height="150">
+   <img src="https://lh3.googleusercontent.com/pw/ACtC-3f0oIHIN5_S0Z72L0b3XQSkL9or6r0pgoyhyugqOA02f8lv1MaYY4aucAd1jTGbWl8-4mPviLlDiIN7frgGYWldM3x45yfi7BxCkfMFUm7NnClHQRIRw5QLFco123lsR0Kyp-uFuDdD9ZBVnqwxTywp=s512-no?authuser=0" alt="img" width="150" height="150">
