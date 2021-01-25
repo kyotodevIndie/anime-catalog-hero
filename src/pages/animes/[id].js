@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row, Col, Divider } from 'antd'
+import { Row, Col } from 'antd'
 
 export default function Anime({apidata}) {
   const giveMeTheYear = apidata.data[0].attributes.startDate.split('-')
@@ -35,15 +35,7 @@ export default function Anime({apidata}) {
     )
 };
 
-    export async function getStaticPaths() {
-        const response = await fetch(`https://kitsu.io/api/edge/anime?page[limit]=20&page[offset]=0`)
-        const apirequest = await response.json()
-        const paths = apirequest.data.map((data) => ({
-          params: { id: data.id },
-        }))
-        return { paths, fallback: true }
-    }
-    export async function getStaticProps({ params }) {
+    export async function getServerSideProps({ params }) {
         const response = await fetch(`https://kitsu.io/api/edge/anime?filter[id]=${params.id}`)
         const apidata = await response.json()
     
