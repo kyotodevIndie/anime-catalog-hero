@@ -11,7 +11,7 @@
     <a href="https://anime-catalog-hero.vercel.app/">View Demo</a>
 </p>
 
-<!-- ABOUT THE PROJECT -->
+<!-- Prints -->
 
 ## About The Project
 
