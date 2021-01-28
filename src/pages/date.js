@@ -33,15 +33,15 @@ function Date ({ apidata }) {
     </DropdownLink>
 
     <Row justify="center" className="animecard">
-          {anime.map((anime) => (
-            <Link key={anime.id} href={`/animes/${anime.id}`}>
-            <Popover placement="right" content={<><p>Average Rating {anime.attributes.averageRating}%</p><p>{anime.attributes.ageRating} - {anime.attributes.ageRatingGuide}</p></>} title={anime.attributes.canonicalTitle} trigger="hover">
+        {anime.map((anime) => (
+          <Link key={anime.id} href={`/animes/${anime.id}`}>
+            <Popover placement="right" content={<><p className="average">Average Rating {anime.attributes.averageRating}%</p><p className="agerating">{anime.attributes.ageRating} - {anime.attributes.ageRatingGuide}</p></>} title={anime.attributes.canonicalTitle} trigger="hover">
               <a>
                 <AnimeCard img={anime.attributes.posterImage.medium} title={anime.attributes.canonicalTitle}/>
               </a>
             </Popover>
           </Link>
-          ))}
+        ))}
     </Row>
     
     <div className="button">

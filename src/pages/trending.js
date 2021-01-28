@@ -19,15 +19,15 @@ export default function Trending({ anime }) {
     </DropdownLink>
 
     <Row justify="center" className="animecard">
-          {anime.data.map((data) => (
-            <Link key={data.id} href={`/animes/${data.id}`}>
-            <Popover placement="right" content={<><p>Average Rating {data.attributes.averageRating}%</p><p>{data.attributes.ageRating} - {data.attributes.ageRatingGuide}</p></>} title={data.attributes.canonicalTitle} trigger="hover">
+        {anime.data.map((data) => (
+          <Link key={data.id} href={`/animes/${data.id}`}>
+            <Popover placement="right" content={<><p className="average">Average Rating {anime.attributes.averageRating}%</p><p className="agerating">{anime.attributes.ageRating} - {anime.attributes.ageRatingGuide}</p></>} title={anime.attributes.canonicalTitle} trigger="hover">
               <a>
                 <AnimeCard img={data.attributes.posterImage.medium} title={data.attributes.canonicalTitle}/>
               </a>
             </Popover>
           </Link>
-          ))}
+        ))}
     </Row>
     </>
   )

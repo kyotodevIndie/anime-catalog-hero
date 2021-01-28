@@ -40,7 +40,7 @@ export default function DropdownLink({children}) {
     );
     return (
         <Row>
-            <Col span={6} offset={6}  className="dropdown">
+            <Col xs={{ span: 18, offset: 4  }} lg={{ span: 4, offset: 6}}  className="dropdown">
                 <Dropdown overlay={menu} trigger={['click']}>
                     <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
                         {children}<DownOutlined />

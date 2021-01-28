@@ -6,8 +6,8 @@ export default function Title() {
     return (
         <>
         <Row>
-            <Col span={6} offset={6} className="left">
-                <h1>Todos os animes</h1>
+            <Col className="left">
+                <h1>All anime</h1>
             </Col>
         </Row>
         </>

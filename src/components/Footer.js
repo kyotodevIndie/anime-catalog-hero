@@ -4,11 +4,11 @@ import { Row, Col } from 'antd'
 
 export default function Footer () {
   return (
-    <footer className="footer">
-      <Row justify="center">
+    <footer>
+      <Row justify="center" className="footer">
         <Col>
           <p>
-            Designed and Coded with ❤ by <a href="https://github.com/kyotodevIndie">Kyoto</a>
+            Designed and Coded with ❤ by <a href="https://github.com/kyotodevIndie">Kyoto</a> 
             | Hosted at <a href="https://vercel.com/">Vercel</a>
           </p>
         </Col>

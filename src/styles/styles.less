@@ -1,5 +1,7 @@
 @marginleftspace: 430px;
 @margin: 50px;
+@margintop: 20px;
+@marginbot: 20px;
 
 .average {
     color: #52c41a;
@@ -10,87 +12,82 @@
 .gray {
     color: #808080;
 }
+.nav {
+    margin-top: @margintop;
+    padding-bottom: @margin;
+}
+.button {
+    text-align: center;
+    margin-top: 12px;
+    height: 32px;
+    line-height: 32px;
+}
+.logo {
+    width: 50px;
+}
+h1 {
+    font-size: 24px;
+}
 
-@media (min-width: 576px) {
-    .nav {
-        margin-top: 20px;
-        padding-bottom: 10px;
-    }
-    .footer {
-        margin-top: 10px;
-        padding-bottom: 10px;
-    }
-    .left {
-        margin-left: 0px;
-    }
-    .dropdown {
-        margin-bottom: 0px;
-        .left;
-    }
-    .card {
-        width: 50px;
-        margin: 40px;
-    }
-    .poster {
-        width: 90px;
-        border-radius: 10px;
-    }
-    .metadescription {
-        text-overflow: ellipsis;
-    }
+@media (min-width: 300px) {
     .animecard {
         margin-left: 0px;
         margin-right: 0px;
     }
-    .button {
-        text-align: center;
-        margin-top: 20px;
-        height: 32px;
-        line-height: 32px;
+    .left {
+        margin-left: 27px;
     }
-    h1 {
-        font-size: 24px;
+    .dropdown {
+        margin-bottom: @marginbot;
+        .left;
     }
-}
-
-@media (min-width: 1200px) {
-    .nav {
-        margin-top: 20px;
-        padding-bottom: @margin;
+    .card {
+        width: 320px;
+        margin: 10px;
     }
     .footer {
         margin-top: @margin;
-        padding-bottom: @margin;
+        padding-bottom: @marginbot;
+        margin: 27px;
+    }
+    .poster {
+        width: 340px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    .animecard {
+        margin-left: 335px;
+        margin-right: 335px;
     }
     .left {
         margin-left: @marginleftspace;
     }
     .dropdown {
-        margin-bottom: 20px;
+        margin-bottom: @marginbot;
         .left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .animecard {
+        margin-left: 335px;
+        margin-right: 335px;
     }
     .card {
         width: 150px;
         margin: 10px;
     }
+    .left {
+        margin-left: @marginleftspace;
+    }
+    .dropdown {
+        margin-bottom: @marginbot;
+        .left;
+    }
     .poster {
         width: 200px;
         border-radius: 10px;
-    }
-    .metadescription {
-        text-overflow: ellipsis;
-    }
-    .animecard {
-        margin-left: 335px;
-        margin-right: 335px;
-    }
-    .button {
-        text-align: center;
-        margin-top: 12px;
-        height: 32px;
-        line-height: 32px;
-    }
-    h1 {
-        font-size: 24px;
     }
 }
