@@ -4,7 +4,7 @@ const { Meta } = Card
 
 export default function AnimeCard ({ img, title }) {
   return (
-    <Col xs={{ span: 20}} lg={{ span: 20 }}>
+    <Col xs={{ span: 20}}>
       <Card
           hoverable
           className='card'
