@@ -7,10 +7,10 @@ export default function Anime({apidata}) {
     return (
         <>
           <Row >
-            <Col xs={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} lg={{ span: 22, offset: 1 }} xl={{ span: 5, offset: 3 }}>
+            <Col xs={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} md={{ span: 11, offset: 7 }} lg={{ span: 8, offset: 8 }} xl={{ span: 5, offset: 3 }}>
               <img className='poster' src={apidata.data[0].attributes.posterImage.medium} alt='Anime Poster' />
             </Col>
-            <Col xs={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} lg={{ span: 22, offset: 1 }}  lg={{ span: 9, offset:0 }}>
+            <Col xs={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} md={{ span: 11, offset: 7 }} lg={{ span: 8, offset: 8   }}  xl={{ span: 9, offset:0 }}>
               <h1>{apidata.data[0].attributes.canonicalTitle} <span className='gray'>{giveMeTheYear[0]}</span></h1>
               <p className='average'>{apidata.data[0].attributes.averageRating}% Average Rating</p>
               <p>Synopsis: {apidata.data[0].attributes.synopsis}</p>
@@ -22,7 +22,7 @@ export default function Anime({apidata}) {
                 </iframe>
               </div>
             </Col>
-            <Col xs={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} md={{ span: 22, offset: 1 }} lg={{ span: 22, offset: 1 }} xl={{ span: 5, offset:1 }}>
+            <Col xs={{ span: 22, offset: 1 }} sm={{ span: 22, offset: 1 }} md={{ span: 11, offset: 7 }} lg={{ span: 8, offset: 8 }}xl={{ span: 5, offset:1 }}>
               <p>{apidata.data[0].attributes.canonicalTitle}</p>
               <p>Start Date: {`${giveMeTheYear[2]}/${giveMeTheYear[1]}/${giveMeTheYear[0]}`}</p>
               <p>  English: {apidata.data[0].attributes.titles.en}</p>
