@@ -8,17 +8,19 @@ export default function Anime({apidata}) {
         <>
           <Row >
             <Col xs={{ span: 22, offset: 1 }} lg={{ span: 5, offset: 3 }}>
-              <img className="poster" src={apidata.data[0].attributes.posterImage.medium} alt="Anime Poster" />
+              <img className='poster' src={apidata.data[0].attributes.posterImage.medium} alt='Anime Poster' />
             </Col>
             <Col xs={{ span: 22, offset: 1 }} lg={{ span: 9, offset:0 }}>
-              <h1>{apidata.data[0].attributes.canonicalTitle} <span className="gray">{giveMeTheYear[0]}</span></h1>
-              <p className="average">{apidata.data[0].attributes.averageRating}% Average Rating</p>
+              <h1>{apidata.data[0].attributes.canonicalTitle} <span className='gray'>{giveMeTheYear[0]}</span></h1>
+              <p className='average'>{apidata.data[0].attributes.averageRating}% Average Rating</p>
               <p>Synopsis: {apidata.data[0].attributes.synopsis}</p>
-              <iframe width="560" height="315"
-              src={`https://www.youtube.com/embed/${apidata.data[0].attributes.youtubeVideoId}`}
-              frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen>
-              </iframe>
+              <div className='videoWrapper'>
+                <iframe width='560' height='315'
+                src={`https://www.youtube.com/embed/${apidata.data[0].attributes.youtubeVideoId}`}
+                frameBorder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+                allowfullscreen>
+                </iframe>
+              </div>
             </Col>
             <Col xs={{ span: 22, offset: 1 }} lg={{ span: 5, offset:1 }}>
               <p>{apidata.data[0].attributes.canonicalTitle}</p>

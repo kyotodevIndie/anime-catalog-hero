@@ -32,10 +32,10 @@ function Popular ({ apidata }) {
     Most Popular Anime
     </DropdownLink>
 
-    <Row justify="center" className="animecard">
+    <Row justify='center' className='animecard'>
         {anime.map((anime) => (
           <Link key={anime.id} href={`/animes/${anime.id}`}>
-            <Popover placement="right" content={<><p className="average">Average Rating {anime.attributes.averageRating}%</p><p className="agerating">{anime.attributes.ageRating} - {anime.attributes.ageRatingGuide}</p></>} title={anime.attributes.canonicalTitle} trigger="hover">
+            <Popover placement='right' content={<><p className='average'>Average Rating {anime.attributes.averageRating}%</p><p className='agerating'>{anime.attributes.ageRating} - {anime.attributes.ageRatingGuide}</p></>} title={anime.attributes.canonicalTitle} trigger='hover'>
               <a>
                 <AnimeCard img={anime.attributes.posterImage.medium} title={anime.attributes.canonicalTitle}/>
               </a>
@@ -44,7 +44,7 @@ function Popular ({ apidata }) {
         ))}
     </Row>
 
-    <div className="button">
+    <div className='button'>
             <Button onClick={LoadMore}>Carregar Mais...</Button>
       </div>
     </>

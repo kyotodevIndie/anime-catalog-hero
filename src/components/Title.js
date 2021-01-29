@@ -6,7 +6,7 @@ export default function Title() {
     return (
         <>
         <Row>
-            <Col className="left">
+            <Col className='left'>
                 <h1>All anime</h1>
             </Col>
         </Row>
